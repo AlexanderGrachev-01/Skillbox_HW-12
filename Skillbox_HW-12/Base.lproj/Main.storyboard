@@ -21,7 +21,7 @@
                                 <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                                 <color key="separatorColor" systemColor="secondaryLabelColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CreatureCell" rowHeight="120" id="xa5-Ws-STf">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CreatureCell" rowHeight="120" id="xa5-Ws-STf" customClass="CreatureCell" customModule="Skillbox_HW_12" customModuleProvider="target">
                                         <rect key="frame" x="20" y="49.5" width="374" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xa5-Ws-STf" id="PFa-ad-CwM">
@@ -97,6 +97,13 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="CreatureImageView" destination="eEC-uD-ue9" id="ek3-rE-Y6o"/>
+                                            <outlet property="CreatureNameLabel" destination="XF5-Q4-zoe" id="JYZ-5e-A6J"/>
+                                            <outlet property="creatureInfoLabel" destination="4i6-Zf-qvd" id="INf-Nj-dvU"/>
+                                            <outlet property="creatureLocationLabel" destination="vXe-jm-EZV" id="Y6F-lv-SUh"/>
+                                            <outlet property="creatureStatusLabel" destination="VJj-5v-dK9" id="F2e-S5-hDg"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -114,6 +121,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wL3-4b-lFh">
+            <objects>
+                <viewController id="Ezi-0C-Zf7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OXT-ta-Kf6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oZO-5g-7DG">
+                                <rect key="frame" x="0.0" y="44" width="414" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="Fq3-yo-1SP"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UK1-je-ev2">
+                                <rect key="frame" x="20" y="292" width="181" height="39"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ahg-qQ-gZJ"/>
+                        <color key="backgroundColor" red="0.21989127989999999" green="0.21934893729999999" blue="0.24314078689999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="ahg-qQ-gZJ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="UK1-je-ev2" secondAttribute="trailing" symbolic="YES" id="0es-eX-w19"/>
+                            <constraint firstItem="UK1-je-ev2" firstAttribute="top" secondItem="oZO-5g-7DG" secondAttribute="bottom" constant="8" symbolic="YES" id="8uW-ma-7Xd"/>
+                            <constraint firstItem="oZO-5g-7DG" firstAttribute="trailing" secondItem="ahg-qQ-gZJ" secondAttribute="trailing" id="NVG-9f-K2S"/>
+                            <constraint firstItem="oZO-5g-7DG" firstAttribute="leading" secondItem="ahg-qQ-gZJ" secondAttribute="leading" id="RKT-lm-2S1"/>
+                            <constraint firstItem="UK1-je-ev2" firstAttribute="leading" secondItem="OXT-ta-Kf6" secondAttribute="leadingMargin" id="VoC-5I-yFC"/>
+                            <constraint firstItem="oZO-5g-7DG" firstAttribute="top" secondItem="ahg-qQ-gZJ" secondAttribute="top" id="h9U-5F-b39"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2QH-Ac-uKC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="138.61607142857142"/>
         </scene>
     </scenes>
     <resources>

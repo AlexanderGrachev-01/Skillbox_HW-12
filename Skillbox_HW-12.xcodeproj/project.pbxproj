@@ -13,6 +13,9 @@
 		1CF41B6D2812D23C008FEBF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CF41B6B2812D23C008FEBF1 /* Main.storyboard */; };
 		1CF41B6F2812D23F008FEBF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CF41B6E2812D23F008FEBF1 /* Assets.xcassets */; };
 		1CF41B722812D23F008FEBF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CF41B702812D23F008FEBF1 /* LaunchScreen.storyboard */; };
+		1CF41B7A2812E44E008FEBF1 /* CreatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF41B792812E44E008FEBF1 /* CreatureCell.swift */; };
+		1CF41B7C281302AD008FEBF1 /* Creature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF41B7B281302AD008FEBF1 /* Creature.swift */; };
+		1CF41B80281304F8008FEBF1 /* CreaturesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF41B7F281304F8008FEBF1 /* CreaturesLoader.swift */; };
 		5152CA139FC6C97341A441B1 /* Pods_Skillbox_HW_12.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BEC4340C2A63595324A022 /* Pods_Skillbox_HW_12.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +28,9 @@
 		1CF41B6E2812D23F008FEBF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CF41B712812D23F008FEBF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CF41B732812D23F008FEBF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CF41B792812E44E008FEBF1 /* CreatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureCell.swift; sourceTree = "<group>"; };
+		1CF41B7B281302AD008FEBF1 /* Creature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creature.swift; sourceTree = "<group>"; };
+		1CF41B7F281304F8008FEBF1 /* CreaturesLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaturesLoader.swift; sourceTree = "<group>"; };
 		43BEC4340C2A63595324A022 /* Pods_Skillbox_HW_12.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skillbox_HW_12.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A1A629D85B9EF79A6EE179A /* Pods-Skillbox_HW-12.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skillbox_HW-12.debug.xcconfig"; path = "Target Support Files/Pods-Skillbox_HW-12/Pods-Skillbox_HW-12.debug.xcconfig"; sourceTree = "<group>"; };
 		EA407A5D0DC5D6CEC75070E6 /* Pods-Skillbox_HW-12.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skillbox_HW-12.release.xcconfig"; path = "Target Support Files/Pods-Skillbox_HW-12/Pods-Skillbox_HW-12.release.xcconfig"; sourceTree = "<group>"; };
@@ -65,7 +71,10 @@
 			children = (
 				1CF41B652812D23C008FEBF1 /* AppDelegate.swift */,
 				1CF41B672812D23C008FEBF1 /* SceneDelegate.swift */,
+				1CF41B7B281302AD008FEBF1 /* Creature.swift */,
+				1CF41B7F281304F8008FEBF1 /* CreaturesLoader.swift */,
 				1CF41B692812D23C008FEBF1 /* ViewController.swift */,
+				1CF41B792812E44E008FEBF1 /* CreatureCell.swift */,
 				1CF41B6B2812D23C008FEBF1 /* Main.storyboard */,
 				1CF41B6E2812D23F008FEBF1 /* Assets.xcassets */,
 				1CF41B702812D23F008FEBF1 /* LaunchScreen.storyboard */,
@@ -80,7 +89,6 @@
 				6A1A629D85B9EF79A6EE179A /* Pods-Skillbox_HW-12.debug.xcconfig */,
 				EA407A5D0DC5D6CEC75070E6 /* Pods-Skillbox_HW-12.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,9 +215,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CF41B7A2812E44E008FEBF1 /* CreatureCell.swift in Sources */,
 				1CF41B6A2812D23C008FEBF1 /* ViewController.swift in Sources */,
 				1CF41B662812D23C008FEBF1 /* AppDelegate.swift in Sources */,
+				1CF41B7C281302AD008FEBF1 /* Creature.swift in Sources */,
 				1CF41B682812D23C008FEBF1 /* SceneDelegate.swift in Sources */,
+				1CF41B80281304F8008FEBF1 /* CreaturesLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
