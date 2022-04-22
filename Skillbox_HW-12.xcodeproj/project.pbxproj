@@ -13,6 +13,7 @@
 		1CF41B6D2812D23C008FEBF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CF41B6B2812D23C008FEBF1 /* Main.storyboard */; };
 		1CF41B6F2812D23F008FEBF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CF41B6E2812D23F008FEBF1 /* Assets.xcassets */; };
 		1CF41B722812D23F008FEBF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CF41B702812D23F008FEBF1 /* LaunchScreen.storyboard */; };
+		5152CA139FC6C97341A441B1 /* Pods_Skillbox_HW_12.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43BEC4340C2A63595324A022 /* Pods_Skillbox_HW_12.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		1CF41B6E2812D23F008FEBF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CF41B712812D23F008FEBF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CF41B732812D23F008FEBF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43BEC4340C2A63595324A022 /* Pods_Skillbox_HW_12.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skillbox_HW_12.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A1A629D85B9EF79A6EE179A /* Pods-Skillbox_HW-12.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skillbox_HW-12.debug.xcconfig"; path = "Target Support Files/Pods-Skillbox_HW-12/Pods-Skillbox_HW-12.debug.xcconfig"; sourceTree = "<group>"; };
+		EA407A5D0DC5D6CEC75070E6 /* Pods-Skillbox_HW-12.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skillbox_HW-12.release.xcconfig"; path = "Target Support Files/Pods-Skillbox_HW-12/Pods-Skillbox_HW-12.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5152CA139FC6C97341A441B1 /* Pods_Skillbox_HW_12.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				1CF41B642812D23C008FEBF1 /* Skillbox_HW-12 */,
 				1CF41B632812D23C008FEBF1 /* Products */,
+				5947804482A8C16103DFFFF1 /* Pods */,
+				D5A035989739B8D1D0E71FF0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = "Skillbox_HW-12";
 			sourceTree = "<group>";
 		};
+		5947804482A8C16103DFFFF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A1A629D85B9EF79A6EE179A /* Pods-Skillbox_HW-12.debug.xcconfig */,
+				EA407A5D0DC5D6CEC75070E6 /* Pods-Skillbox_HW-12.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D5A035989739B8D1D0E71FF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43BEC4340C2A63595324A022 /* Pods_Skillbox_HW_12.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1CF41B762812D23F008FEBF1 /* Build configuration list for PBXNativeTarget "Skillbox_HW-12" */;
 			buildPhases = (
+				3B6FECF011E508F695E7933A /* [CP] Check Pods Manifest.lock */,
 				1CF41B5E2812D23C008FEBF1 /* Sources */,
 				1CF41B5F2812D23C008FEBF1 /* Frameworks */,
 				1CF41B602812D23C008FEBF1 /* Resources */,
+				F54346F9C7A210F050E250E8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B6FECF011E508F695E7933A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Skillbox_HW-12-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F54346F9C7A210F050E250E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Skillbox_HW-12/Pods-Skillbox_HW-12-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Skillbox_HW-12/Pods-Skillbox_HW-12-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Skillbox_HW-12/Pods-Skillbox_HW-12-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1CF41B5E2812D23C008FEBF1 /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		1CF41B772812D23F008FEBF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A1A629D85B9EF79A6EE179A /* Pods-Skillbox_HW-12.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -311,6 +381,7 @@
 		};
 		1CF41B782812D23F008FEBF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA407A5D0DC5D6CEC75070E6 /* Pods-Skillbox_HW-12.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
