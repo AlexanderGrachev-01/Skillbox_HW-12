@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C50A66A28198ABE001CDD5E /* CreatureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C50A66928198ABE001CDD5E /* CreatureVC.swift */; };
 		1CF41B662812D23C008FEBF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF41B652812D23C008FEBF1 /* AppDelegate.swift */; };
 		1CF41B682812D23C008FEBF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF41B672812D23C008FEBF1 /* SceneDelegate.swift */; };
 		1CF41B6A2812D23C008FEBF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF41B692812D23C008FEBF1 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C50A66928198ABE001CDD5E /* CreatureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureVC.swift; sourceTree = "<group>"; };
 		1CF41B622812D23C008FEBF1 /* Skillbox_HW-12.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Skillbox_HW-12.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF41B652812D23C008FEBF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CF41B672812D23C008FEBF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				1CF41B7B281302AD008FEBF1 /* Creature.swift */,
 				1CF41B7F281304F8008FEBF1 /* CreaturesLoader.swift */,
 				1CF41B692812D23C008FEBF1 /* ViewController.swift */,
+				1C50A66928198ABE001CDD5E /* CreatureVC.swift */,
 				1CF41B792812E44E008FEBF1 /* CreatureCell.swift */,
 				1CF41B6B2812D23C008FEBF1 /* Main.storyboard */,
 				1CF41B6E2812D23F008FEBF1 /* Assets.xcassets */,
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C50A66A28198ABE001CDD5E /* CreatureVC.swift in Sources */,
 				1CF41B7A2812E44E008FEBF1 /* CreatureCell.swift in Sources */,
 				1CF41B6A2812D23C008FEBF1 /* ViewController.swift in Sources */,
 				1CF41B662812D23C008FEBF1 /* AppDelegate.swift in Sources */,
