@@ -1,18 +1,31 @@
 import Foundation
 import Alamofire
 
-protocol CreaturesLoderDelegate {
-    func loaded(creatures: [Creature])
-}
-
 class CreaturesLoader {
     
-    var delegate: CreaturesLoderDelegate?
+    var uerl = "https://rickandmortyapi.com/api/character"
     
     func loadedCreatures(completion: @escaping ([Creature]) -> Void) {
-     //   AF.request("https://rickandmortyapi.com/api/character").responseJSON
-        
-
+        let url = URL(string: "https://rickandmortyapi.com/api/character")!
+        var request = URLRequest(url: url)
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            if let data = data,
+               let json = try? JSONSerialization.jsonObject(with: data, options: .allowFragments),
+               let jsonDict = json as? NSDictionary {
+                print(json)
+                var creatures: [Creature] = []
+                for (_, data) in jsonDict {
+                    if let creature = Creature(data: data as! NSDictionary) {
+                        creatures.append(creature)
+                    }
+                }
+                DispatchQueue.main.async {
+                    completion(creatures)
+                }
+            }
+                
+        }
+        task.resume()
     }
 }
 

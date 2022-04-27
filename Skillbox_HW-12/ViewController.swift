@@ -7,9 +7,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        CreaturesLoader().loadedCreatures{ creaturesArray in
+            self.creaturesArray = creaturesArray
+            //self.tableView.reloadData()
+        }
     }
 }
-
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
